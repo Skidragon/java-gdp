@@ -1,9 +1,9 @@
 package com.lambdaschool.gdp;
 
 import lombok.Data;
-import lombok.Generated;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Data
@@ -11,7 +11,8 @@ import javax.persistence.Id;
 public class Country {
 
     private @Id
-    @Generated Long id;
+    @GeneratedValue
+    Long id;
     private String country;
     private Long gdp;
 
